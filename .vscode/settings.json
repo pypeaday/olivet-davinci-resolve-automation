@@ -1,0 +1,14 @@
+{
+    "python.pythonPath": ".venv\\davinci-automation\\Scripts\\python.exe",
+    "vim.insertModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "i",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+}
