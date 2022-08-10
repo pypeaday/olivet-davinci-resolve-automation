@@ -9,6 +9,15 @@
     * This script should check if the file with that name exists in `./lyrics/04-done` and if so alert me so that I don't redo work
 3. The python script will also copy the stubbed srt file into `./lyrics/03-manual-wip/{date}/{songname}.srt` and this is what can be loaded into DaVinci and overwritten etc.
 3. In DaVinci:
+    * In new project create bins: 
+        * `Initial Subtitles` for starting point files out of python script
+        * `Individual Timelines` for putting per-song timelines in
+        * `Songs` for the initial songs
+        * `Completed Subtitles` for re-importing subtitles after matching up from the initial files
+        * `Rendered Songs` for re-importing the rendered mp4 files that are song/lyrics/background
+    * Naming schemes:
+        * Prefix timelines with `TL - `
+        * Prefix combined songs with `CTL - ` for "Combined Timeline"
     * Import all full songs, instrumentals, lyric files
     * For each song make a timeline out of the full song, the instrumental, and the lyric file
     * **Make sure the timeline starts at 0 seconds...default is an hour for some reason - this messes up the exported subtitle files**
