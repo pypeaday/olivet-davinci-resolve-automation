@@ -14,8 +14,11 @@
     * **Make sure the timeline starts at 0 seconds...default is an hour for some reason - this messes up the exported subtitle files**
 4. Tune in DaVinci then export subtitles to `./lyrics/04-done/{songname}.srt` (I don't think keeping dates in the done folder matters...)
 5. Render?
+6. Actually - then I use the individual timelines to create the separate mp4 files that Kayla needs
 
 ## Subtitle settings
+
+> TODO: Figure out setting these as deafult track style for subtitles
 
 font: CMG Sans
 size: 65
