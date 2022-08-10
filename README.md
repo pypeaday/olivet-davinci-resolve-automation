@@ -15,6 +15,16 @@
 4. Tune in DaVinci then export subtitles to `./lyrics/04-done/{songname}.srt` (I don't think keeping dates in the done folder matters...)
 5. Render?
 
+## Subtitle settings
+
+font: CMG Sans
+size: 65
+line spacing: 25
+kerning: -5 to 10 depending on slide layout
+alignment: center
+y: 540
+
+
 
 # Automation ideas
 
