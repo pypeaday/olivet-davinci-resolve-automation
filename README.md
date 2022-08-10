@@ -1,12 +1,21 @@
 # Automating Olive Bible Music & Slides production
 
-## Ideal workflow
+## Workflow
 
-1. Get song lyrics
-2. Script or something to create SRT files
-3. Load SRT files with Python API into Davinci
-4. Manually verify
-5. Render
+1. Paste raw song lyrics into `./lyrics/{date}/{songname}.srt
+    * Lyric format doesn't super matter but having new lines in between what I think slides should be makes it easier in DaVinci
+2. Run python `stub_out_srt.py` which will create stubbed out subtitle files and will save each one to `./lyrics/02-stubs/{date}/{songname}.srt`
+    * This script should check if the file with that name exists in `./lyrics/04-done` and if so alert me so that I don't redo work
+3. The python script will also copy the stubbed srt file into `./lyrics/03-manual-wip/{date}/{songname}.srt` and this is what can be loaded into DaVinci and overwritten etc.
+3. In DaVinci:
+    * Import all full songs, instrumentals, lyric files
+    * For each song make a timeline out of the full song, the instrumental, and the lyric file
+    * **Make sure the timeline starts at 0 seconds...default is an hour for some reason - this messes up the exported subtitle files**
+4. Tune in DaVinci then export subtitles to `./lyrics/04-done/{songname}.srt` (I don't think keeping dates in the done folder matters...)
+5. Render?
+
+
+# Automation ideas
 
 ### Getting lyrics
 1. Index all song files
