@@ -29,6 +29,9 @@
 5. Render each timeline/song and save to `./rendered-songs` as `{songname}.mp4`
 
 6. Use mp4 files from step 5 to combine songs if necessary
+    * Import mp4 files into `Rendered Songs` bin
+    * Create timeline with songs to combine
+    * **Might need to import the instrumental tracks again? I don't know why but I can just bring them into the timeline as the first audio track no problem**
 
 ## Workflow for reusing rendered song/lyric videos but changing background
 
