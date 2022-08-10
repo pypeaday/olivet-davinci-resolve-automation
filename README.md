@@ -13,8 +13,16 @@
     * For each song make a timeline out of the full song, the instrumental, and the lyric file
     * **Make sure the timeline starts at 0 seconds...default is an hour for some reason - this messes up the exported subtitle files**
 4. Tune in DaVinci then export subtitles to `./lyrics/04-done/{songname}.srt` (I don't think keeping dates in the done folder matters...)
-5. Render?
-6. Actually - then I use the individual timelines to create the separate mp4 files that Kayla needs
+5. Render each timeline/song and save to `./rendered-songs` as `{songname}.mp4`
+
+6. Use mp4 files from step 5 to combine songs if necessary
+
+## Workflow for reusing rendered song/lyric videos but changing background
+
+1. Find the date it was done by looking for the srt file in `./lyrics-01-raw`
+2. Open that date's project in DaVinci and copy the timeline of the song to a new project
+3. Change background in timeline
+4. re-render
 
 ## Subtitle settings
 
