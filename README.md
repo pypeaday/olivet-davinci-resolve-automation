@@ -7,6 +7,7 @@
     * Name needs to be what I name the subtitle track in DaVinci - I'm using a Title case schema
 2. Run python `stub_out_srt.py` which will create stubbed out subtitle files and will save each one to `./lyrics/02-stubs/{date}/{songname}.srt`
     * This script should check if the file with that name exists in `./lyrics/04-done` and if so alert me so that I don't redo work
+    * The check requires that a raw lyrics file for a song exist **again** in in the raw folder for the target date - ie. I don't have a starting list of songs to check because the first step in my current workflow is to get the lyrics for the requested songs since that isn't automated yet... not sure if I should have an earlier step with just list of songs that have been done or what? For now the potential duplication of work in googling lyrics and saving to a file isn't much to swallow
 3. The python script will also copy the stubbed srt file into `./lyrics/03-manual-wip/{date}/{songname}.srt` and this is what can be loaded into DaVinci and overwritten etc.
 3. In DaVinci:
     * Some setup notes:
