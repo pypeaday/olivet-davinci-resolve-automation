@@ -1,5 +1,12 @@
 # Automating Olive Bible Music & Slides production
 
+## TODOs
+
+1. Track songs that are done better so that I don't have to make a raw lyric file to find out if I have already done the song
+2. Look for ways to automate at least getting the lyrics - I can manually format the "raw lyrics" files for the stubbed out srt files
+3. Database of songs, instrumentals, etc.
+4. Database of songs with lyrics and backgrounds (or no background) which could hopefully be used with Presenter
+
 ## Workflow
 
 1. Paste raw song lyrics into `./lyrics/{date}/{songname}.srt`
@@ -57,12 +64,12 @@ y: 540
 
 # Automation ideas
 
-### Getting lyrics
+## Getting lyrics
 1. Index all song files
 2. Get details of those files which should have artist and song name - maybe something with `os`?
 3. Get all lyrics to just text files to be used for probably manually created srt
 
-### Getting Lyrics 2
+## Getting Lyrics 2
 1. api.lyrics.ovh doesn't make it easy to get Christian/worship stuff so hand copying from genius seems ok
 2. I can probably use the genius api...
 
@@ -73,11 +80,6 @@ y: 540
 3. Load multiple files and they _should_ match multiple songs as long as I start the subtitle at the right spot
 4. When rendering a service the subtitles can be exported as one separate file, but not multiple files per track - that's one reason to make srt files per song first
 4b. Actually looks like I can only export a fle _or_ embed in video, and for formatting for subtitles to look big in the center then it needs to be embedded... not a big deal if we have srt files per song
-
-## TODOs
-
-1. Database of songs, instrumentals, etc.
-2. Database of songs with lyrics and backgrounds (or no background) which could hopefully be used with Presenter
 
 ## NOTES
 
