@@ -11,11 +11,13 @@
 3. In DaVinci:
     * Some setup notes:
         * I created bins in the `Olivet Bible Church` project: 
+            * `Backgrounds` for backgrounds that are used
             * `Initial Subtitles` for starting point files out of python script
             * `Individual Timelines` for putting per-song timelines in
             * `Songs` for the initial songs
             * `Completed Subtitles` for re-importing subtitles after matching up from the initial files
             * `Rendered Songs` for re-importing the rendered mp4 files that are song/lyrics/background
+            * `Combined Timelines` for putting rendered songs in for meshing them together
         * Naming schemes:
             * Prefix timelines with `TL - `
             * Prefix combined songs with `CTL - ` for "Combined Timeline"
