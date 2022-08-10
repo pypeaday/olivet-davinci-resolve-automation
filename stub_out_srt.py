@@ -47,13 +47,23 @@ def stub_it_out(filepath: str):
 if __name__ == "__main__":
     date = "20220814"
     files = [
-        "lord-i-need-you",
-        "how-great-is-your-love",
-        "psalm-45-fairest-of-all",
-        "let-the-nations-be-glad",
+        "Lord I Need You",
+        "How Great Is Your Love",
+        "Psalm 45 - Fairest Of All",
+        "Let The Nations Be Glad",
     ]
     for f in files:
         filepath = f"./lyrics/01-raw/{date}/{f}.srt"
+
+        # todo: check if song is already done
+        done_filepath = Path(
+            Path(filepath).parent.parent.parent, "04-done", Path(filepath).name
+        )
+        print(f"checking {done_filepath}")
+        if done_filepath.exists():
+            print(f"{Path(filepath).name} is already done")
+            continue
+
         new_file = stub_it_out(f"{filepath}")
         manual_wip_file = Path(filepath.replace("01-raw", "03-manual-wip"))
         # if I haven't started working on it yet then stage the file for me to
