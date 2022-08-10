@@ -2,24 +2,26 @@
 
 ## Workflow
 
-1. Paste raw song lyrics into `./lyrics/{date}/{songname}.srt
+1. Paste raw song lyrics into `./lyrics/{date}/{songname}.srt`
     * Lyric format doesn't super matter but having new lines in between what I think slides should be makes it easier in DaVinci
     * Name needs to be what I name the subtitle track in DaVinci - I'm using a Title case schema
 2. Run python `stub_out_srt.py` which will create stubbed out subtitle files and will save each one to `./lyrics/02-stubs/{date}/{songname}.srt`
     * This script should check if the file with that name exists in `./lyrics/04-done` and if so alert me so that I don't redo work
 3. The python script will also copy the stubbed srt file into `./lyrics/03-manual-wip/{date}/{songname}.srt` and this is what can be loaded into DaVinci and overwritten etc.
 3. In DaVinci:
-    * In new project create bins: 
-        * `Initial Subtitles` for starting point files out of python script
-        * `Individual Timelines` for putting per-song timelines in
-        * `Songs` for the initial songs
-        * `Completed Subtitles` for re-importing subtitles after matching up from the initial files
-        * `Rendered Songs` for re-importing the rendered mp4 files that are song/lyrics/background
-    * Naming schemes:
-        * Prefix timelines with `TL - `
-        * Prefix combined songs with `CTL - ` for "Combined Timeline"
+    * Some setup notes:
+        * I created bins in the `Olivet Bible Church` project: 
+            * `Initial Subtitles` for starting point files out of python script
+            * `Individual Timelines` for putting per-song timelines in
+            * `Songs` for the initial songs
+            * `Completed Subtitles` for re-importing subtitles after matching up from the initial files
+            * `Rendered Songs` for re-importing the rendered mp4 files that are song/lyrics/background
+        * Naming schemes:
+            * Prefix timelines with `TL - `
+            * Prefix combined songs with `CTL - ` for "Combined Timeline"
     * Import all full songs, instrumentals, lyric files
     * For each song make a timeline out of the full song, the instrumental, and the lyric file
+    * **Set the instrumental track as the first one so it plays by default**
     * **Make sure the timeline starts at 0 seconds...default is an hour for some reason - this messes up the exported subtitle files**
 4. Tune in DaVinci then export subtitles to `./lyrics/04-done/{songname}.srt` (I don't think keeping dates in the done folder matters...)
 5. Render each timeline/song and save to `./rendered-songs` as `{songname}.mp4`
@@ -29,9 +31,10 @@
 ## Workflow for reusing rendered song/lyric videos but changing background
 
 1. Find the date it was done by looking for the srt file in `./lyrics-01-raw`
-2. Open that date's project in DaVinci and copy the timeline of the song to a new project
-3. Change background in timeline
-4. re-render
+2. The timeline for that song should be in the DaVinci project in the `Individual Timelines` bin 
+3. Create a duplicate timeline and change background
+4. Save timeline with `BG - {N}` where `N` is the nth iteration of backgrounds for a given song
+4. Re-render
 
 ## Subtitle settings
 
