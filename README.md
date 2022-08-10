@@ -4,6 +4,7 @@
 
 1. Paste raw song lyrics into `./lyrics/{date}/{songname}.srt
     * Lyric format doesn't super matter but having new lines in between what I think slides should be makes it easier in DaVinci
+    * Name needs to be what I name the subtitle track in DaVinci - I'm using a Title case schema
 2. Run python `stub_out_srt.py` which will create stubbed out subtitle files and will save each one to `./lyrics/02-stubs/{date}/{songname}.srt`
     * This script should check if the file with that name exists in `./lyrics/04-done` and if so alert me so that I don't redo work
 3. The python script will also copy the stubbed srt file into `./lyrics/03-manual-wip/{date}/{songname}.srt` and this is what can be loaded into DaVinci and overwritten etc.
