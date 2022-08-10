@@ -22,9 +22,9 @@
 
 4
 00:01:25,666 --> 00:01:39,500
-Through the ages gone before
-Through the trial and the sword
-Many saints and martyrs conquered though they died
+<b>Through the ages gone before</b>
+<b>Through the trial and the sword</b>
+<b>Many saints and martyrs conquered though they died</b>
 
 5
 00:01:41,041 --> 00:01:53,500

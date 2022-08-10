@@ -7,7 +7,8 @@
 
 2
 00:00:36,875 --> 00:00:59,791
-<b>You bore my weakness, You took my shame</b>
+<b>You bore my weakness</b>
+<b>You took my shame</b>
 <b>Buried my burdens in fields of grace</b>
 <b>You called me out, lifted me up</b>
 <b>How great is Your love</b>
