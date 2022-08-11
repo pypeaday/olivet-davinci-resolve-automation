@@ -54,7 +54,7 @@
 > TODO: Figure out setting these as deafult track style for subtitles
 
 font: CMG Sans
-size: 65
+size: 88
 line spacing: 25
 kerning: -5 to 10 depending on slide layout
 alignment: center
