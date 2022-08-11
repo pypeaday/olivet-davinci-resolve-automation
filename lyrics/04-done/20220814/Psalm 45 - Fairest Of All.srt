@@ -8,8 +8,10 @@
 2
 00:00:42,250 --> 00:01:02,458
 <b>What grace pours from your lips</b>
-<b>The sound calls the midnight to morning</b>
-<b>The melody turns my winter to spring</b>
+<b>The sound calls the </b>
+<b>midnight to morning</b>
+<b>The melody turns </b>
+<b>my winter to spring</b>
 
 3
 00:01:02,458 --> 00:01:15,666
@@ -35,7 +37,8 @@
 
 7
 00:02:10,416 --> 00:02:31,166
-<b>A song of love pouring out from the tree singing</b>
+<b>A song of love </b>
+<b>pouring out from the tree singing</b>
 <b>For the joy set before me</b>
 <b>For the joy set before me</b>
 

@@ -13,54 +13,80 @@
 <b>that Christ is come</b>
 
 3
-00:00:48,708 --> 00:01:21,708
-<b>Let the nations be glad, let the people rejoice</b>
+00:00:48,708 --> 00:01:02,791
+<b>Let the nations be glad</b>
+<b>let the people rejoice</b>
 <b>For salvation belongs to our God</b>
-<b>Let the whole earth be filled with the praises of the Lord</b>
+
+4
+00:01:03,291 --> 00:01:18,791
+<b>Let the whole earth be filled</b>
+<b>with the praises of the Lord</b>
 <b>For salvation belongs to our God</b>
 <b>Let the nations be glad</b>
 
-4
+5
 00:01:25,666 --> 00:01:39,500
 <b>Through the ages gone before</b>
 <b>Through the trial and the sword</b>
-<b>Many saints and martyrs conquered though they died</b>
-
-5
-00:01:41,041 --> 00:01:53,500
-Still we're holding out the cross
-Crossing ocean suffering loss
-Shall endure all things to win the crown of life
+<b>Many saints and martyrs</b>
+<b> conquered though they died</b>
 
 6
-00:01:55,083 --> 00:02:27,833
-<b>Let the nations be glad, let the people rejoice</b>
-<b>For salvation belongs to our God</b>
-<b>Let the whole earth be filled with the praises of the Lord</b>
-<b>For salvation belongs to our God</b>
-<b>Let the nations be glad</b>
+00:01:41,041 --> 00:01:53,500
+<b>Still we're holding out the cross</b>
+<b>Crossing ocean suffering loss</b>
+<b>Shall endure all things to win</b>
+<b>the crown of life</b>
 
 7
-00:02:39,958 --> 00:03:08,750
-<b>As your holy church goes forth, in the Holy Spirit’s power</b>
-<b>With the glories of the Gospel to explain</b>
-<b>Now we pray Your kingdom come</b>
-<b>And we pray Your will be done</b>
-<b>For the honor and the glory of Your name</b>
+00:01:55,583 --> 00:02:09,666
+<b>Let the nations be glad</b>
+<b>let the people rejoice</b>
+<b>For salvation belongs to our God</b>
 
 8
-00:03:09,958 --> 00:03:39,958
-<b>Let the nations be glad, let the people rejoice</b>
-<b>For salvation belongs to our God</b>
-<b>Let the whole earth be filled with the praises of the Lord</b>
+00:02:10,166 --> 00:02:25,666
+<b>Let the whole earth be filled</b>
+<b>with the praises of the Lord</b>
 <b>For salvation belongs to our God</b>
 <b>Let the nations be glad</b>
 
 9
-00:03:40,291 --> 00:04:11,333
-<b>Let the nations be glad, let the people rejoice</b>
+00:02:39,958 --> 00:02:52,750
+<b>As your holy church goes forth</b>
+<b>in the Holy Spirit’s power</b>
+<b>With the glories of the Gospel to explain</b>
+
+10
+00:02:53,583 --> 00:03:08,583
+<b>Now we pray Your kingdom come</b>
+<b>And we pray Your will be done</b>
+<b>For the honor and the glory of Your name</b>
+
+11
+00:03:09,583 --> 00:03:23,666
+<b>Let the nations be glad</b>
+<b>let the people rejoice</b>
 <b>For salvation belongs to our God</b>
-<b>Let the whole earth be filled with the praises of the Lord</b>
+
+12
+00:03:24,166 --> 00:03:39,666
+<b>Let the whole earth be filled</b>
+<b>with the praises of the Lord</b>
+<b>For salvation belongs to our God</b>
+<b>Let the nations be glad</b>
+
+13
+00:03:40,125 --> 00:03:52,916
+<b>Let the nations be glad</b>
+<b>let the people rejoice</b>
+<b>For salvation belongs to our God</b>
+
+14
+00:03:54,166 --> 00:04:09,666
+<b>Let the whole earth be filled</b>
+<b>with the praises of the Lord</b>
 <b>For salvation belongs to our God</b>
 <b>Let the nations be glad</b>
 
