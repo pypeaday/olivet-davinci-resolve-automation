@@ -19,7 +19,7 @@
 <b>For salvation belongs to our God</b>
 
 4
-00:01:03,291 --> 00:01:18,791
+00:01:03,291 --> 00:01:22,041
 <b>Let the whole earth be filled</b>
 <b>with the praises of the Lord</b>
 <b>For salvation belongs to our God</b>
@@ -71,11 +71,10 @@
 <b>For salvation belongs to our God</b>
 
 12
-00:03:24,166 --> 00:03:39,666
+00:03:24,166 --> 00:03:38,375
 <b>Let the whole earth be filled</b>
 <b>with the praises of the Lord</b>
 <b>For salvation belongs to our God</b>
-<b>Let the nations be glad</b>
 
 13
 00:03:40,125 --> 00:03:52,916
@@ -84,9 +83,13 @@
 <b>For salvation belongs to our God</b>
 
 14
-00:03:54,166 --> 00:04:09,666
+00:03:54,166 --> 00:04:12,375
 <b>Let the whole earth be filled</b>
 <b>with the praises of the Lord</b>
 <b>For salvation belongs to our God</b>
+<b>Let the nations be glad</b>
+
+15
+00:04:14,291 --> 00:04:19,833
 <b>Let the nations be glad</b>
 
