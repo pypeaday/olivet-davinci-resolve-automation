@@ -31,10 +31,14 @@
             * Prefix combined songs with `CTL - ` for "Combined Timeline"
     * Import all full songs, instrumentals, lyric files
     * For each song make a timeline out of the full song, the instrumental, and the lyric file
+    * **2 audio tracks, 2 videos**
     * **Set the instrumental track as the first one so it plays by default**
     * **Make sure the timeline starts at 0 seconds...default is an hour for some reason - this messes up the exported subtitle files**
 
 4. Add licensing slide from `Edit` Tab then click `Effect` next to `Media Pool` and insert a slide -> I'm using Titles: Right Lower Third then putting the information in the Rich Text section of the slide.
+    * CMG Sans
+    * Size 40
+    * Align right
 5. Tune in DaVinci then export subtitles to `./lyrics/04-done/{songname}.srt` (I don't think keeping dates in the done folder matters...)
 6. Render each timeline/song and save to `./rendered-songs` as `{songname}.mp4`
 
