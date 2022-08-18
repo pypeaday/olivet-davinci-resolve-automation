@@ -41,6 +41,7 @@
     * Align right
 5. Tune in DaVinci then export subtitles to `./lyrics/04-done/{songname}.srt` (I don't think keeping dates in the done folder matters...)
 6. Render each timeline/song and save to `./rendered-songs` as `{songname}.mp4`
+    * Audio -> Out Track 1 -> set to Bus 1 (Stereo) to combine the tracks... but to All Timeline Tracks for separate tracks... feels backwards to me
 
 7. Use mp4 files from step 5 to combine songs if necessary
     * Import mp4 files into `Rendered Songs` bin
