@@ -1,0 +1,1 @@
+C:\Users\nicpa\Git\davinci-automation\.venv\davinci-automation-win\Scripts\activate.bat
