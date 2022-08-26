@@ -34,6 +34,7 @@
     * **2 audio tracks, 2 videos**
     * **Set the instrumental track as the first one so it plays by default**
     * **Make sure the timeline starts at 0 seconds...default is an hour for some reason - this messes up the exported subtitle files**
+    * **WHEN RENDERING THE SONGS THE OTUPUT TRACK 1 NEEDS SET TO TIMELINE TRACK FOR EACH AUDIO TRACK FOR THEM TO BE SEPARATE OTHERWISE BUS 1 (STEREO) FOR COMBINING INTO ONE AUDIO TRACK**
 
 4. Add licensing slide from `Edit` Tab then click `Effect` next to `Media Pool` and insert a slide -> I'm using Titles: Right Lower Third then putting the information in the Rich Text section of the slide.
     * CMG Sans
