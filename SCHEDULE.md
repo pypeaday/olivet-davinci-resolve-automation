@@ -8,6 +8,6 @@
 
 ## September 4, 2022
 
-- I Will Wait For You & Goodness of God (still need to split)
+- I Will Wait For You & Goodness of God 
 - You Cannot Be Stopped
 - You've Already Won (skipped in my DaVinci workflow)

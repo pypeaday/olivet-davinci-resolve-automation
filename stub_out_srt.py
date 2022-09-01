@@ -65,11 +65,12 @@ def stub_it_out(filepath: str):
     new_msg = ""
     for i, group in enumerate(msg.split("\n\n")):
         group = strip_it(group)
-        # todo: what if we go past 60 seconds
-        start_seconds = str((5 * i)).zfill(2)
-        end_seconds = str((5 * (i + 1))).zfill(2)
-        start_time = f"00:00:{start_seconds},000"
-        end_time = f"00:00:{end_seconds},000"
+        start_minutes = str((15 * i)//60).zfill(2)
+        end_minutes = str((15 * (i+1))//60).zfill(2)
+        start_seconds = str((15 * i)%60).zfill(2)
+        end_seconds = str((15 * (i + 1))%60).zfill(2)
+        start_time = f"00:{start_minutes}:{start_seconds},000"
+        end_time = f"00:{end_minutes}:{end_seconds},000"
         srt_timecode = f"{start_time} --> {end_time}"
         new_msg += f"{i+1}\n{srt_timecode}\n{group}\n\n"
         # print(f"{new_msg}")
