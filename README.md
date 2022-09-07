@@ -3,6 +3,7 @@
 ## TODOs
 
 1. Track songs that are done better so that I don't have to make a raw lyric file to find out if I have already done the song
+    * I think naming with <song name>.<artist> in the raw folder would be good, maybe even with ccli number?
 2. Look for ways to automate at least getting the lyrics - I can manually format the "raw lyrics" files for the stubbed out srt files
 3. Database of songs, instrumentals, etc.
 4. Database of songs with lyrics and backgrounds (or no background) which could hopefully be used with Presenter
