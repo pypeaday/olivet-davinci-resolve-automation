@@ -11,3 +11,9 @@
 - I Will Wait For You & Goodness of God 
 - You Cannot Be Stopped
 - You've Already Won (skipped in my DaVinci workflow)
+
+## September 11, 2022
+
+- Our God Is Alive & Before The Throne Of God Above
+- Goodness Of God
+- Hymn Of Heaven
