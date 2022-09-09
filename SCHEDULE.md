@@ -14,6 +14,8 @@
 
 ## September 11, 2022
 
-- Our God Is Alive & Before The Throne Of God Above
+- ~~Our God Is Alive & Before The Throne Of God Above~~
+- Build My Life & Before The Throne of God Above
 - Goodness Of God
-- Hymn Of Heaven
+- ~~Hymn Of Heaven~~
+- Turn Your Eyes Upon Jesus
