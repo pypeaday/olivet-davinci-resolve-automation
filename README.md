@@ -51,6 +51,9 @@
     * **Might need to import the instrumental tracks again? I don't know why but I can just bring them into the timeline as the first audio track no problem**
     * **Overlap the songs for transistion to make the music and background flow nice - then in `Deliever` when it's time to render change the Audio settings for `Output Track 1` as `All Timeline Tracks` which will combine them into one for Presenter**
 
+8. Upload to nextcloud
+9. Upload to [presenter](https://auth.worshiptools.com/login)
+
 ## Workflow for reusing rendered song/lyric videos but changing background
 
 1. Find the date it was done by looking for the srt file in `./lyrics-01-raw`
