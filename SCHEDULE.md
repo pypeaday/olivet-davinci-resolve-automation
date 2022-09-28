@@ -19,3 +19,17 @@
 - Goodness Of God
 - ~~Hymn Of Heaven~~
 - Turn Your Eyes Upon Jesus
+
+## September 18, 2022
+
+"King of Kings" Worship Initiative #7127647 AND "Great Things" Phil Wickham #7111321
+
+"Power of the Cross" Stuart Townsend #4490766
+
+"O Lord My Rock and My Redeemer" Sovereign Grace #7096627
+
+## October 2, 2022
+
+"1000 Tongues"
+"Your Mercy and The Lord Is My Salvation"
+"Goodness Of God"
