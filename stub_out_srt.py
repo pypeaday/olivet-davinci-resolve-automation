@@ -1,5 +1,5 @@
-from pathlib import Path
 from argparse import ArgumentParser
+from pathlib import Path
 
 things_to_strip = [
     "[Verse 1]",
@@ -21,21 +21,14 @@ def strip_it(s: str) -> str:
 
 
 def make_sure_paths_exist(filepath: str):
-    Path(filepath.replace("01-raw", "02-stubs")).mkdir(
-        parents=True, exist_ok=True
-    )
-    Path(filepath.replace("01-raw", "03-manual-wip")).mkdir(
-        parents=True, exist_ok=True
-    )
-    Path(filepath.replace("01-raw", "04-done")).mkdir(
-        parents=True, exist_ok=True
-    )
+    Path(filepath.replace("01-raw", "02-stubs")).mkdir(parents=True, exist_ok=True)
+    Path(filepath.replace("01-raw", "03-manual-wip")).mkdir(parents=True, exist_ok=True)
 
 
 def subtitles_exist(filepath: str, date: str) -> bool:
 
     name = Path(filepath).stem
-    
+
     print(f"checking if {name} was already done")
 
     done_directory = Path("lyrics", "04-done")
@@ -65,10 +58,10 @@ def stub_it_out(filepath: str):
     new_msg = ""
     for i, group in enumerate(msg.split("\n\n")):
         group = strip_it(group)
-        start_minutes = str((15 * i)//60).zfill(2)
-        end_minutes = str((15 * (i+1))//60).zfill(2)
-        start_seconds = str((15 * i)%60).zfill(2)
-        end_seconds = str((15 * (i + 1))%60).zfill(2)
+        start_minutes = str((15 * i) // 60).zfill(2)
+        end_minutes = str((15 * (i + 1)) // 60).zfill(2)
+        start_seconds = str((15 * i) % 60).zfill(2)
+        end_seconds = str((15 * (i + 1)) % 60).zfill(2)
         start_time = f"00:{start_minutes}:{start_seconds},000"
         end_time = f"00:{end_minutes}:{end_seconds},000"
         srt_timecode = f"{start_time} --> {end_time}"
@@ -84,7 +77,9 @@ if __name__ == "__main__":
     args = parser.parse_args()
     date = args.date
     raw_files_directory = f"./lyrics/01-raw/{date}"
-    print("Don't forget to try and figure out how to check for songs already done BEFORE needing to copy lyrics into 01-raw/SONGNAME.srt")
+    print(
+        "Don't forget to try and figure out how to check for songs already done BEFORE needing to copy lyrics into 01-raw/SONGNAME.srt"
+    )
     if not Path(raw_files_directory).exists():
         print(
             f"WARNING: {raw_files_directory} does not exist\nCheck your date syntax and folder name - it should follow YYYYMMDD format"
@@ -100,9 +95,9 @@ if __name__ == "__main__":
     for f in files:
         filepath = str(f)
 
-        if subtitles_exist(filepath, date):
-            print(f"{f.name} already done")
-            continue
+        # if subtitles_exist(filepath, date):
+        #     print(f"{f.name} already done")
+        #     continue
 
         new_file = stub_it_out(f"{filepath}")
 
