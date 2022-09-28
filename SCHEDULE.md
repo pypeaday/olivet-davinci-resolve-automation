@@ -30,6 +30,6 @@
 
 ## October 2, 2022
 
-"1000 Tongues"
-"Your Mercy and The Lord Is My Salvation"
+"1000 Tongues" Vertical Worship
+"Your Mercy" Austin Stone Worship AND "The Lord Is My Salvation" Keith and Kristyn Getty
 "Goodness Of God"
