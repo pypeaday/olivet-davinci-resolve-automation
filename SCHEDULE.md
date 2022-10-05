@@ -33,3 +33,9 @@
 "1000 Tongues" Vertical Worship AND  "Your Mercy" Austin Stone Worship 
 "The Lord Is My Salvation" Keith and Kristyn Getty
 "Goodness Of God" The Worship Initiative
+
+## October 9, 2022
+
+"The Cup Was Not Removed" and "Yes I Will"
+"O Praise The Name"
+"By Faith"
