@@ -1,3 +1,4 @@
+*.mp3
 .venv/*
 __pycache__/*
 rendered-songs/*
