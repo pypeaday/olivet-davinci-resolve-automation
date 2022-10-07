@@ -39,5 +39,5 @@
 ~~"The Cup Was Not Removed" and "Yes I Will"~~
 "Yes I Will"
 "For God So Loved"
-"O Praise The Name"
 "By Faith"
+"O Praise The Name"
