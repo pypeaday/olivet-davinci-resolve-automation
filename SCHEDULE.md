@@ -36,6 +36,8 @@
 
 ## October 9, 2022
 
-"The Cup Was Not Removed" and "Yes I Will"
+~~"The Cup Was Not Removed" and "Yes I Will"~~
+"Yes I Will"
+"For God So Loved"
 "O Praise The Name"
 "By Faith"
