@@ -41,3 +41,9 @@
 "For God So Loved"
 "By Faith"
 "O Praise The Name"
+
+## October 16
+"Sovereign Over Us" Breakaway Ministries #6011370 & "Christ Be Magnified" I Am They #7139866
+"All I Have is Christ" Sovereign Grace #5174122
+"O Church Arise" Keith & Kristyn Getty #4611992
+"Christ be All" by Grace Worship #7149786
