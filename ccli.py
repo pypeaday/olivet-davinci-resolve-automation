@@ -4,26 +4,36 @@ from pathlib import Path
 class Song:
     def __init__(self, entry: str):
         self._entry = entry.split("\n")
+        self._entry = [x for x in self._entry if x != ""]
+
+        # try:
+        #     assert len(self._entry) == 3
+        # except AssertionError:
+        #     breakpoint()
         self._song = self._entry[0]
         self._artist = self._entry[1]
         self._ccli = self._entry[2]
         self.song = self._song.replace('"', "")
         self.artist = self._artist
-        self.ccli = self._ccli
-        self.slug = f"{self.song}.{self.artist}.{self.ccli}".lower().replace(" ", "-")
+        self.ccli = self._ccli.replace("#", "").replace("-", "").replace(" ", "")
+        self.slug = (
+            f"{self.song}.{self.artist}.{self.ccli}".lower()
+            .replace(" ", "-")
+            .replace('"', "")
+        )
+
         self.raw_lyrics_exist = Path(f"./lyrics/01-raw/{self.slug}").exists()
         self.stubbed_lyrics_exist = Path(f"./lyrics/02-stubs/{self.slug}").exists()
 
-        self.old_raw_file = Path(f"./lyrics/01-raw/{self._song}")
+        self.old_raw_file = Path(f"./lyrics/01-raw/{self.song}")
 
         if not self.raw_lyrics_exist and self.old_raw_file.exists():
             print(f"Migrating {self._song} raw and stub to new naming convention")
             self.__migrate_lyric_file()
 
     def __migrate_lyric_file(self):
-
         self.old_raw_file.rename(f"./lyrics/01-raw/{self.slug}")
-        old_stub_file = Path(f"./lyrics/02-stubs/{self._song}")
+        old_stub_file = Path(f"./lyrics/02-stubs/{self.song}")
         if old_stub_file.exists():
             old_stub_file.rename(f"./lyrics/02-stubs/{self.slug}")
 
