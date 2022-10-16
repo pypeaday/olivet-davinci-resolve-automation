@@ -1,5 +1,9 @@
+# NEED TO REFACTOR FOR LYRICS FOLDER CHANGE AND ALSO TRACKING BETTER!!!
+
 from argparse import ArgumentParser
 from pathlib import Path
+
+from ccli import Song, SongsRepository
 
 things_to_strip = [
     "[Verse 1]",
@@ -53,7 +57,7 @@ def subtitles_exist(filepath: str, date: str) -> bool:
 
 def stub_it_out(filepath: str):
 
-    msg = Path(filepath).read_text()
+    frontmatter, msg = Path(filepath).read_text().split("---")
 
     new_msg = ""
     for i, group in enumerate(msg.split("\n\n")):
@@ -67,44 +71,26 @@ def stub_it_out(filepath: str):
         srt_timecode = f"{start_time} --> {end_time}"
         new_msg += f"{i+1}\n{srt_timecode}\n{group}\n\n"
         # print(f"{new_msg}")
-    Path(filepath.replace("01-raw", "02-stubs")).write_text(new_msg)
     return new_msg
 
 
 if __name__ == "__main__":
     parser = ArgumentParser("Olivet automation for DaVinci workflow")
-    parser.add_argument("--date", type=str, required=True)
-    args = parser.parse_args()
-    date = args.date
-    raw_files_directory = f"./lyrics/01-raw/{date}"
-    print(
-        "Don't forget to try and figure out how to check for songs already done BEFORE needing to copy lyrics into 01-raw/SONGNAME.srt"
-    )
-    if not Path(raw_files_directory).exists():
-        print(
-            f"WARNING: {raw_files_directory} does not exist\nCheck your date syntax and folder name - it should follow YYYYMMDD format"
-        )
-        import sys
 
-        sys.exit()
+    # assuming that if I have a CCLI number that the song has been done before
+    songs = SongsRepository()
 
-    else:
-        files = list(Path(raw_files_directory).glob("**/*.srt"))
+    song: Song
+    for song in songs.songs:
+        if song.stubbed_lyrics_exist:
+            continue
+        if not song.raw_lyrics_file.exists():
+            print(
+                f"*** {song.song} has entry in ccli.txt but no lyric stubs reported here!"
+            )
+            breakpoint()
+            continue
+        filepath = str(song.raw_lyrics_file)
+        new_msg = stub_it_out(f"{filepath}")
 
-    make_sure_paths_exist(f"{raw_files_directory}")
-    for f in files:
-        filepath = str(f)
-
-        # if subtitles_exist(filepath, date):
-        #     print(f"{f.name} already done")
-        #     continue
-
-        new_file = stub_it_out(f"{filepath}")
-
-        # I think this wip directory is worthless since I'm not really iterating
-        # on the file... I just make it right in DaVinci and export once
-        manual_wip_file = Path(filepath.replace("01-raw", "03-manual-wip"))
-        # if I haven't started working on it yet then stage the file for me to
-        # start
-        if not manual_wip_file.exists():
-            manual_wip_file.write_text(new_file)
+        Path(filepath.replace("01-raw", "02-stubs")).write_text(new_msg)
