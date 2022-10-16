@@ -6,10 +6,6 @@ class Song:
         self._entry = entry.split("\n")
         self._entry = [x for x in self._entry if x != ""]
 
-        # try:
-        #     assert len(self._entry) == 3
-        # except AssertionError:
-        #     breakpoint()
         self._song = self._entry[0]
         self._artist = self._entry[1]
         self._ccli = self._entry[2]
@@ -32,6 +28,7 @@ class Song:
             self.__migrate_lyric_file()
 
     def __migrate_lyric_file(self):
+        breakpoint("why is this happening")
         self.old_raw_file.rename(f"./lyrics/01-raw/{self.slug}")
         old_stub_file = Path(f"./lyrics/02-stubs/{self.song}")
         if old_stub_file.exists():
