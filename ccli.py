@@ -35,7 +35,9 @@ class Song:
             old_stub_file.rename(f"./lyrics/02-stubs/{self.slug}")
 
     def __repr__(self):
-        return "\n".join(self._entry)
+        import json
+
+        return json.dumps({k: str(v) for k, v in self.__dict__.items()})
 
     def __str__(self):
         return self.__repr__()
