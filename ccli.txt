@@ -1,4 +1,4 @@
-"Lion and the Lamb"
+"The Lion and the Lamb"
 Big Daddy Weave
 # 7038281
 
@@ -6,15 +6,15 @@ Big Daddy Weave
 Vertical Worship
 # 7060709
 
-"Our God is For Us"
+"God is For Us"
 CityAlight
 # 7121853
 
-"It was Finished Upon that Cross"
+"It Was Finished Upon That Cross"
 CityAlight
 # 7171907
 
-"Let the Nations Be Glad"
+"Let The Nations Be Glad"
 Matt Boswell
 # 5760316
 
@@ -115,6 +115,14 @@ Keith and Kristyn Getty
 We The Kingdom
 # 7138599
 
+"King of Kings" 
+Worship Initiative
+# 7127647
+
+"Power of the Cross" 
+Stuart Townend
+# 4490766
+
 "Sovereign Over Us" 
 Breakaway Ministries 
 # 6011370
@@ -122,6 +130,10 @@ Breakaway Ministries
 "Christ Be Magnified" 
 I Am They 
 # 7139866
+
+"Christ Be All"
+Grace Worship
+# 48414705
 
 "All I Have is Christ"
 Sovereign Grace 
