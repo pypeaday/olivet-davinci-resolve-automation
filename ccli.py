@@ -6,7 +6,7 @@ class Song:
         self._entry = entry.split("\n")
         self._entry = [x for x in self._entry if x != ""]
 
-        self._song = self._entry[0]
+        self._song = self._entry[0].title()
         self._artist = self._entry[1]
         self._ccli = self._entry[2]
         self.song = self._song.replace('"', "")
@@ -18,21 +18,37 @@ class Song:
             .replace('"', "")
         )
 
-        self.raw_lyrics_exist = Path(f"./lyrics/01-raw/{self.slug}").exists()
+        self.raw_lyrics_file = Path(f"./lyrics/01-raw/{self.slug}")
+        self.raw_lyrics_exist = self.raw_lyrics_file.exists()
         self.stubbed_lyrics_exist = Path(f"./lyrics/02-stubs/{self.slug}").exists()
 
         self.old_raw_file = Path(f"./lyrics/01-raw/{self.song}")
 
-        if not self.raw_lyrics_exist and self.old_raw_file.exists():
-            print(f"Migrating {self._song} raw and stub to new naming convention")
-            self.__migrate_lyric_file()
+        # if not self.raw_lyrics_exist and self.old_raw_file.exists():
+        #     # print(f"Migrating {self._song} raw and stub to new naming convention")
+        #     # self.__migrate_lyric_file()
+        #     print(f"Frontmattering {self._song} raw and stub to new naming convention")
+        #     self.__frontmatter()
+        # else:
+        #     breakpoint()
+        #     print(f"********{self.song} wasn't migrated")
 
-    def __migrate_lyric_file(self):
-        breakpoint("why is this happening")
-        self.old_raw_file.rename(f"./lyrics/01-raw/{self.slug}")
-        old_stub_file = Path(f"./lyrics/02-stubs/{self.song}")
-        if old_stub_file.exists():
-            old_stub_file.rename(f"./lyrics/02-stubs/{self.slug}")
+    # def __frontmatter(self):
+    # frontmatter = f"""
+    # name: {self.song}
+    # ccli: {self.ccli}
+    # artist: {self.artist}
+    # ---
+    # """
+    # new_text = frontmatter + self.old_raw_file.read_text()
+    # self.raw_lyrics_file.write_text(new_text)
+
+    # def __migrate_lyric_file(self):
+    #     breakpoint("why is this happening")
+    #     self.old_raw_file.rename(f"./lyrics/01-raw/{self.slug}")
+    #     old_stub_file = Path(f"./lyrics/02-stubs/{self.song}")
+    #     if old_stub_file.exists():
+    #         old_stub_file.rename(f"./lyrics/02-stubs/{self.slug}")
 
     def __repr__(self):
         import json
