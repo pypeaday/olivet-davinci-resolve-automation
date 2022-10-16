@@ -2,21 +2,24 @@
 
 ## TODOs
 
-1. Track songs that are done better so that I don't have to make a raw lyric file to find out if I have already done the song
-    * I think naming with <song name>.<artist> in the raw folder would be good, maybe even with ccli number?
+<!-- 1. Track songs that are done better so that I don't have to make a raw lyric file to find out if I have already done the song -->
+<!--     * I think naming with <song name>.<artist> in the raw folder would be good, maybe even with ccli number? -->
 2. Look for ways to automate at least getting the lyrics - I can manually format the "raw lyrics" files for the stubbed out srt files
 3. Database of songs, instrumentals, etc.
 4. Database of songs with lyrics and backgrounds (or no background) which could hopefully be used with Presenter
 
 ## Workflow
 
-1. Paste raw song lyrics into `./lyrics/{date}/{songname}.srt`
-    * Lyric format doesn't super matter but having new lines in between what I think slides should be makes it easier in DaVinci
-    * Name needs to be what I name the subtitle track in DaVinci - I'm using a Title case schema
-2. Run python `stub_out_srt.py` which will create stubbed out subtitle files and will save each one to `./lyrics/02-stubs/{date}/{songname}.srt`
-    * This script should check if the file with that name exists in `./lyrics/04-done` and if so alert me so that I don't redo work
-    * The check requires that a raw lyrics file for a song exist **again** in in the raw folder for the target date - ie. I don't have a starting list of songs to check because the first step in my current workflow is to get the lyrics for the requested songs since that isn't automated yet... not sure if I should have an earlier step with just list of songs that have been done or what? For now the potential duplication of work in googling lyrics and saving to a file isn't much to swallow
-3. The python script will also copy the stubbed srt file into `./lyrics/03-manual-wip/{date}/{songname}.srt` and this is what can be loaded into DaVinci and overwritten etc.
+1. Paste raw song lyrics into `./lyrics/{date}/{songname}`
+    * Break up lyrics with new lines where slide breaks should be 
+    * Frontmatter (top of the file) 
+        ```yaml 
+        name: SONG NAME
+        artist: ARTIST
+        ccli: # CCLI NUMBER
+        ---
+        ```
+2. Run python `stub_out_srt.py` which will create stubbed out subtitle files and will save each one to `./lyrics/02-stubs/{song-name}.{artist}.{ccli}`
 3. In DaVinci:
     * Some setup notes:
         * I created bins in the `Olivet Bible Church` project: 
@@ -41,7 +44,7 @@
     * CMG Sans
     * Size 40
     * Align right
-5. Tune in DaVinci then export subtitles to `./lyrics/04-done/{songname}.srt` (I don't think keeping dates in the done folder matters...)
+5. Tune in DaVinci then export subtitles as `{songname}.srt` 
 6. Render each timeline/song and save to `./rendered-songs` as `{songname}.mp4`
     * Audio -> Out Track 1 -> set to Bus 1 (Stereo) to combine the tracks... but to All Timeline Tracks for separate tracks... feels backwards to me
 
@@ -51,7 +54,7 @@
     * **Might need to import the instrumental tracks again? I don't know why but I can just bring them into the timeline as the first audio track no problem**
     * **Overlap the songs for transistion to make the music and background flow nice - then in `Deliever` when it's time to render change the Audio settings for `Output Track 1` as `All Timeline Tracks` which will combine them into one for Presenter**
 
-8. Upload to nextcloud
+8. Upload rendered media as well as subtitle files to Olivet Bible space in Nextcloud
 9. Upload to [presenter](https://auth.worshiptools.com/login)
 
 ## Workflow for reusing rendered song/lyric videos but changing background
