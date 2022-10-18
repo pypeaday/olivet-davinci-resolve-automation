@@ -62,4 +62,4 @@ if __name__ == "__main__":
         filepath = str(song.raw_lyrics_file)
         new_msg, frontmatter = stub_it_out(f"{filepath}")
 
-        Path(filepath.replace("01-raw", "02-stubs")).write_text(new_msg)
+        song.stubbed_lyrics_file.write_text(new_msg)

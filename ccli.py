@@ -39,7 +39,8 @@ class Song:
             .replace('"', "")
         )
 
-        self.stubbed_lyrics_exist = Path(f"./lyrics/02-stubs/{self.slug}").exists()
+        self.stubbed_lyrics_file = Path(f"./lyrics/02-stubs/{self.slug}")
+        self.stubbed_lyrics_exist = self.stubbed_lyrics_file.exists()
 
     def __repr__(self):
         import json
