@@ -2,27 +2,44 @@ from pathlib import Path
 
 
 class Song:
-    def __init__(self, entry: str):
-        self._entry = entry.split("\n")
-        self._entry = [x for x in self._entry if x != ""]
+    def __init__(self, raw_lyrics_file: Path):
 
-        self._song = self._entry[0].title()
-        self._artist = self._entry[1]
-        self._ccli = self._entry[2]
-        self.song = self._song.replace('"', "")
-        self.artist = self._artist
-        self.ccli = self._ccli.replace("#", "").replace("-", "").replace(" ", "")
+        self.raw_lyrics_file = raw_lyrics_file
+        self.frontmatter, self.lyrics = raw_lyrics_file.read_text().split("---")
+
+        self.__set_attributes()
+
+    def __set_attributes(self):
+
+        info = {
+            e.strip().split(":")[0]: e.strip().split(":")[1]
+            for e in self.frontmatter.split("\n")
+            if e.strip() != ""
+        }
+        # info = dict()
+        # for _e in self.frontmatter.split("\n"):
+        #     e = _e.strip()
+        #     if e == "":
+        #         continue
+        #     else:
+        #         try:
+        #             k, v = e.split(":")
+        #             info[k] = v
+        #         except ValueError:
+        #             breakpoint()
+        try:
+            self.song = info["name"].strip()
+        except KeyError:
+            breakpoint()
+        self.artist = info["artist"].strip()
+        self.ccli = info["ccli"].strip()
         self.slug = (
             f"{self.song}.{self.artist}.{self.ccli}".lower()
             .replace(" ", "-")
             .replace('"', "")
         )
 
-        self.raw_lyrics_file = Path(f"./lyrics/01-raw/{self.slug}")
-        self.raw_lyrics_exist = self.raw_lyrics_file.exists()
         self.stubbed_lyrics_exist = Path(f"./lyrics/02-stubs/{self.slug}").exists()
-
-        self.old_raw_file = Path(f"./lyrics/01-raw/{self.song}")
 
         # if not self.raw_lyrics_exist and self.old_raw_file.exists():
         #     # print(f"Migrating {self._song} raw and stub to new naming convention")
@@ -61,12 +78,10 @@ class Song:
 
 class SongsRepository:
     def __init__(self):
-        self.songs = [
-            Song(song) for song in Path("./ccli.txt").read_text().split("\n\n")
-        ]
+        self.songs = [Song(f) for f in Path("./lyrics/01-raw").glob("*")]
 
     def save(self):
-        Path("./ccli.txt").write_text("\n\n".join([str(song) for song in self.songs]))
+        Path("./ccli2.txt").write_text("\n\n".join([str(song) for song in self.songs]))
 
     def add_song(self, song: str, artist: str, ccli_number: str):
         self.songs.append(Song("\n".join([song, artist, ccli_number])))
