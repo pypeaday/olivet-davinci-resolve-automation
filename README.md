@@ -10,7 +10,7 @@
 
 ## Workflow
 
-1. Paste raw song lyrics into `./lyrics/{date}/{songname}`
+1. Paste raw song lyrics into `./lyrics/{songname}`
     * Break up lyrics with new lines where slide breaks should be 
     * Frontmatter (top of the file) 
         ```yaml 

@@ -47,3 +47,10 @@
 "All I Have is Christ" Sovereign Grace #5174122
 "O Church Arise" Keith & Kristyn Getty #4611992
 "Christ be All" by Grace Worship #7149786
+
+## October 30
+Praise To The Lord, The Almighty Passion #4345378
+You Cannot Be Stoped Phil Wickham & Chris Quilala #7127096
+"King of Kings" Worship Initiative #7127647
+Hymn Of Heaven, Phil Wickham # 7168994
+
