@@ -54,3 +54,9 @@ You Cannot Be Stoped Phil Wickham & Chris Quilala #7127096
 "King of Kings" Worship Initiative #7127647
 Hymn Of Heaven, Phil Wickham # 7168994
 
+
+## November 4
+"Battle Belongs" Phil Wickham
+"Behold Our God" Sovereign Grace Music
+"Goodness of God" Worship Initiative
+"Psalm 45 (Fairest Of All)" Shane and Shane

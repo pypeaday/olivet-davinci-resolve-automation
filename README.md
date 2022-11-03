@@ -8,6 +8,8 @@
 3. Database of songs, instrumentals, etc.
 4. Database of songs with lyrics and backgrounds (or no background) which could hopefully be used with Presenter
 
+`:set colorcolumn=35` will put the vertical bar at a nice spot for max width of a line
+
 ## Workflow
 
 1. Paste raw song lyrics into `./lyrics/{songname}`
