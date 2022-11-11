@@ -37,6 +37,8 @@ class Song:
             f"{self.song}.{self.artist}.{self.ccli}".lower()
             .replace(" ", "-")
             .replace('"', "")
+            .replace("'", "")
+            .replace(",", "")
         )
 
         self.stubbed_lyrics_file = Path(f"./lyrics/02-stubs/{self.slug}")
