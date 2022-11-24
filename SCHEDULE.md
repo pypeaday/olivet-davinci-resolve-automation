@@ -60,3 +60,8 @@ Hymn Of Heaven, Phil Wickham # 7168994
 "Behold Our God" Sovereign Grace Music
 "Goodness of God" Worship Initiative
 "Psalm 45 (Fairest Of All)" Shane and Shane
+
+## November 27
+* Who is This
+* Come Thou Long Expected Jesus
+* Turn Your Eyes Upon Jesus
