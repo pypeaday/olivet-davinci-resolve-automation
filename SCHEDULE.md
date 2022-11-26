@@ -65,3 +65,4 @@ Hymn Of Heaven, Phil Wickham # 7168994
 * Who is This
 * Come Thou Long Expected Jesus
 * Turn Your Eyes Upon Jesus
+* Light Of The World
