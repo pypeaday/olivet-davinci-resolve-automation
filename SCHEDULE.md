@@ -66,3 +66,9 @@ Hymn Of Heaven, Phil Wickham # 7168994
 * Come Thou Long Expected Jesus
 * Turn Your Eyes Upon Jesus
 * Light Of The World
+
+# December 2
+* Hark! THe Herald Angels Sing (Keith and Kristyn Getty)
+* Come Thou Long Expected Jesus (Meredith Andrews)
+* Who Is This (Sovereign Grace Music)
+* By Faith (Keith and Kristyn Getty)
