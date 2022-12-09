@@ -72,3 +72,10 @@ Hymn Of Heaven, Phil Wickham # 7168994
 * Come Thou Long Expected Jesus (Meredith Andrews)
 * Who Is This (Sovereign Grace Music)
 * By Faith (Keith and Kristyn Getty)
+
+# December 9
+* Behold (Phil Wickham, Anne Wilson)
+* Hark! THe Herald Angels Sing (Keith and Kristyn Getty)
+* All My Ways Are Known To You (CityAlight)
+* ~~There Is A Fountain (Filled With Love) (Shane & Shane)~~
+* There Is A Fountain (Filled With Love) (Norton Hall Band)
