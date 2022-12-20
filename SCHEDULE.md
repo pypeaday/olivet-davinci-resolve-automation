@@ -85,3 +85,9 @@ Hymn Of Heaven, Phil Wickham # 7168994
 * It is well - Austin stone worship 
 * Behold 
 * Christ be magnified - I am they
+
+# December 24
+* O Holy Night
+* O Come O Come Emmanuel
+* Who Is This
+* Silent Night
