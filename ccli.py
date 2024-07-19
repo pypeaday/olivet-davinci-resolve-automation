@@ -3,14 +3,12 @@ from pathlib import Path
 
 class Song:
     def __init__(self, raw_lyrics_file: Path):
-
         self.raw_lyrics_file = raw_lyrics_file
         self.frontmatter, self.lyrics = raw_lyrics_file.read_text().split("---")
 
         self.__set_attributes()
 
     def __set_attributes(self):
-
         info = {
             e.strip().split(":")[0]: e.strip().split(":")[1]
             for e in self.frontmatter.split("\n")

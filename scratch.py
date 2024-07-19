@@ -14,6 +14,7 @@ from pathlib import Path
 #     print(f)
 #     Path(f"./lyrics/03-manual-wip/{f.stem}").write_text(f.read_text())
 
+
 # use ccli as a mapping of sorts
 class CCLI:
     def __init__(self, entry: str):

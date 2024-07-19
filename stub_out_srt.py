@@ -25,7 +25,6 @@ def strip_it(s: str) -> str:
 
 
 def stub_it_out(filepath: str):
-
     frontmatter, msg = Path(filepath).read_text().split("---")
 
     new_msg = ""
